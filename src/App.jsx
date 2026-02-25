@@ -3,6 +3,9 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Header from './constants/Header'
 import Footer from './constants/Footer'
+import Team from './pages/Team'
+import Services from './pages/Services'
+import TeamMember from './pages/TeamMember'
 
 const App = () => {
   return (
