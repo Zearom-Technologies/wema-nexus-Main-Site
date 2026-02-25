@@ -1,0 +1,6 @@
+@reference "tailwindcss";
+@reference "../index.css";
+
+.header-nav {
+    @apply sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800;
+}
