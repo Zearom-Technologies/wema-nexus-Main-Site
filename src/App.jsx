@@ -6,6 +6,7 @@ import Footer from './constants/Footer'
 import Team from './pages/Team'
 import Services from './pages/Services'
 import TeamMember from './pages/TeamMember'
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/team" element={<Team />} />
         <Route path="/team/:slug" element={<TeamMember />} />
+        <Route path="/contact" element={<Contact />} />
         {/* <Route path="/about" element={<About />} /> */}
       </Routes>
       <Footer />
