@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_URL = "https://admin.wemanexus.com/api/v1/inquiries";
+const API_URL = "/api/v1/inquiries";
 
 export default function InquiryForm() {
     const [formData, setFormData] = useState({
