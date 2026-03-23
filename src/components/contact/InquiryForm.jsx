@@ -130,7 +130,7 @@ export default function InquiryForm() {
             {/* Division / Site */}
             <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Which division are you enquiring about? <span className="text-primary">*</span>
+                    Which division are you inquiring about? <span className="text-primary">*</span>
                 </label>
                 <select
                     name="site"
