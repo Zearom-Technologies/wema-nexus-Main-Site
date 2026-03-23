@@ -65,7 +65,7 @@ const divisions = [
 
 export default function Services() {
     return (
-        <main className="bg-background-light  min-h-screen">
+        <main className="bg-background-light dark:bg-background-dark min-h-screen">
             {/* Page Header */}
             <section className="relative pt-20 pb-16 overflow-hidden">
                 <div className="absolute inset-0 pointer-events-none opacity-20">
@@ -80,7 +80,7 @@ export default function Services() {
                         Three Pillars. <br />
                         <span className="text-primary italic">One Ecosystem.</span>
                     </h1>
-                    <p className="max-w-2xl mx-auto text-lg text-gray-600  font-light">
+                    <p className="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400 font-light">
                         Each division operates with its own focus and expertise — yet all
                         are connected by the Wema Nexus vision of integrated excellence.
                     </p>
