@@ -12,7 +12,7 @@ const contactDetails = [
         icon: "phone",
         label: "Call Us",
         value: CONTACT_PHONE,
-        href: `tel:${CONTACT_PHONE}`,
+        href: `tel:${CONTACT_PHONE.replace(/\s+/g, "")}`,
     },
     {
         icon: "location_on",
