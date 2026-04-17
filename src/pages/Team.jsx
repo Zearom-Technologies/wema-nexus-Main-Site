@@ -36,7 +36,7 @@ export default function Team() {
             group_add
           </span>
                     <h2 className="font-display text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                        Want to work with us?
+                        Hello, want to work with us?
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400 mb-8">
                         We're always looking for talented researchers, clinicians, and
