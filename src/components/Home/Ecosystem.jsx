@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Ecosystem = () => {
     return (
@@ -10,9 +11,10 @@ const Ecosystem = () => {
                         <h2 className="text-4xl font-heading font-bold text-gray-900 mb-3">Our Ecosystem</h2>
                         <p className="text-gray-500 text-lg">Pioneering VC & macro-driven across our investment arms.</p>
                     </div>
-                    <a href="#" className="hidden sm:flex items-center gap-2 text-[#721073] font-semibold hover:text-[#4a0b4b] transition-colors">
-                        View All Ventures <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-                    </a>
+                    <Link to="/services" className="hidden sm:flex items-center gap-2 text-[#721073] font-semibold hover:text-[#4a0b4b] transition-colors">
+                        View All Divisions
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                    </Link>
                 </div>
 
                 {/* Bento Grid layout */}
@@ -33,9 +35,9 @@ const Ecosystem = () => {
                             <div className="mt-auto text-white">
                                 <h3 className="text-3xl font-heading font-bold mb-3">Corporate Wellness Programs.</h3>
                                 <p className="text-gray-300 text-sm mb-6 max-w-md leading-relaxed">Comprehensive mental solutions for total performance across onboarding, mindfulness, and our resources at reflow.</p>
-                                <button className="bg-white text-gray-900 px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+                                <Link to="/services" className="inline-block bg-white text-gray-900 px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors shadow-lg">
                                     Read More
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -57,41 +59,40 @@ const Ecosystem = () => {
                                 <h3 className="text-2xl font-heading font-bold text-gray-900 mb-2">Q3 / Global Market Trends</h3>
                                 <p className="text-gray-500 text-sm mb-6 max-w-sm leading-relaxed">From digital concepts globally, here's strategic direction to shape what's next.</p>
                             </div>
-                            <a href="#" className="flex items-center gap-2 text-sm font-bold text-[#721073] hover:text-[#4a0b4b] transition-colors mt-auto w-fit border-b-2 border-[#721073] pb-0.5">
-                                Download Report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-                            </a>
+                            <Link to="/services" className="flex items-center gap-2 text-sm font-bold text-[#721073] hover:text-[#4a0b4b] transition-colors mt-auto w-fit border-b-2 border-[#721073] pb-0.5">
+                                Download Report
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                            </Link>
                         </div>
 
                         {/* Bottom 2 sub-cards */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-[1.2]">
 
-                            {/* Dark Card */}
-                            <div className="bg-[#111] rounded-[2rem] p-6 text-white shadow-xl flex flex-col relative overflow-hidden group">
+                            {/* Dark Card — links to services */}
+                            <Link to="/services" className="bg-[#111] rounded-[2rem] p-6 text-white shadow-xl flex flex-col relative overflow-hidden group">
                                 <div className="absolute inset-0 flex items-center justify-center opacity-80 group-hover:scale-110 transition-transform duration-500">
                                     <img src="https://images.unsplash.com/photo-1555529771-835f59bfc50c?auto=format&fit=crop&q=80&w=400" alt="Cart bg" className="w-full h-full object-cover opacity-20 mix-blend-luminosity" />
-                                    {/* Realistic Cart overlay icon */}
                                     <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#ef4444" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="absolute z-10 opacity-70"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
                                 </div>
-
                                 <div className="mt-auto relative z-10 pb-2">
                                     <h3 className="text-xl font-heading font-bold mb-1 leading-tight">Digital Value Checks</h3>
                                     <p className="text-gray-400 text-xs">eCommerce Flow</p>
                                 </div>
-                            </div>
+                            </Link>
 
-                            {/* Purple Card */}
-                            <div className="bg-[#721073] rounded-[2rem] p-6 text-white shadow-xl flex flex-col justify-between group overflow-hidden relative">
+                            {/* Purple Card — links to contact */}
+                            <Link to="/contact" className="bg-[#721073] rounded-[2rem] p-6 text-white shadow-xl flex flex-col justify-between group overflow-hidden relative">
                                 <div className="relative z-10">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="mb-4 text-white"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                                     <h3 className="text-xl font-heading font-bold mb-1 leading-tight">Nexus Interact</h3>
-                                    <p className="text-purple-200 text-xs">Sleek API into workflow</p>
+                                    <p className="text-purple-200 text-xs">Speak with our team today</p>
                                 </div>
                                 <div className="self-end mt-4 relative z-10">
                                     <div className="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center backdrop-blur-sm group-hover:bg-white/20 cursor-pointer transition-colors bg-white/10">
                                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M5 12l7 7 7-7" /></svg>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
 
                         </div>
                     </div>

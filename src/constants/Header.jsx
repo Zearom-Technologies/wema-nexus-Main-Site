@@ -19,7 +19,13 @@ const Header = () => {
 
         {/* Navigation Links */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700 tracking-wide uppercase">
-          <a href="#research" className="hover:text-[#721073] transition-colors">Research</a>
+          <a href="https://admin.wemanexus.com/api/v1/research/services"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="hover:text-[#721073] transition-colors"
+          >
+            Research
+          </a>
           <a href="#consulting" className="hover:text-[#721073] transition-colors">Consulting</a>
           <a href="#ecommerce" className="hover:text-[#721073] transition-colors">E-Commerce</a>
         </div>

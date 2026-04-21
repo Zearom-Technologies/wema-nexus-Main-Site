@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
     return (
@@ -16,7 +17,7 @@ const Hero = () => {
 
             {/* Cards Section */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto md:h-[500px]">
-                {/* Card 1 */}
+                {/* Card 1 — Research */}
                 <div className="group relative rounded-[2rem] overflow-hidden shadow-xl aspect-square md:aspect-auto">
                     <img
                         src="https://images.unsplash.com/photo-1576091160550-2173ff9e81b5?auto=format&fit=crop&q=80&w=800"
@@ -30,13 +31,13 @@ const Hero = () => {
                         </div>
                         <h3 className="text-2xl font-heading font-semibold mb-2">Nexus Research</h3>
                         <p className="text-gray-200 text-sm mb-4 leading-relaxed max-w-[90%]">Uncover global trends and data-driven insights to leapfrog your competition.</p>
-                        <a href="#" className="flex items-center gap-2 text-sm font-semibold hover:text-[#e0dce0] transition-colors">
+                        <Link to="/services" className="flex items-center gap-2 text-sm font-semibold hover:text-[#e0dce0] transition-colors">
                             Explore Skills <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
-                {/* Card 2 */}
+                {/* Card 2 — Care */}
                 <div className="group relative rounded-[2rem] overflow-hidden shadow-xl md:-translate-y-8 aspect-square md:aspect-auto">
                     <img
                         src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800"
@@ -50,13 +51,13 @@ const Hero = () => {
                         </div>
                         <h3 className="text-2xl font-heading font-semibold mb-2">Nexus Care</h3>
                         <p className="text-gray-200 text-sm mb-4 leading-relaxed max-w-[90%]">Redefining consulting with structured support for fast-forward organizations.</p>
-                        <a href="#" className="flex items-center gap-2 text-sm font-semibold hover:text-[#e0dce0] transition-colors">
+                        <Link to="/services" className="flex items-center gap-2 text-sm font-semibold hover:text-[#e0dce0] transition-colors">
                             Find Support <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
-                {/* Card 3 */}
+                {/* Card 3 — Market */}
                 <div className="group relative rounded-[2rem] overflow-hidden shadow-xl aspect-square md:aspect-auto">
                     <img
                         src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=800"
@@ -70,9 +71,9 @@ const Hero = () => {
                         </div>
                         <h3 className="text-2xl font-heading font-semibold mb-2">Nexus Market</h3>
                         <p className="text-gray-200 text-sm mb-4 leading-relaxed max-w-[90%]">Explore premium goods and services. A curated ecosystem where style thrives.</p>
-                        <a href="#" className="flex items-center gap-2 text-sm font-semibold hover:text-white transition-colors">
+                        <Link to="/services" className="flex items-center gap-2 text-sm font-semibold hover:text-white transition-colors">
                             View Platform <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
