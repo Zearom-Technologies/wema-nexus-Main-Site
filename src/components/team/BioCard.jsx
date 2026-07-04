@@ -18,7 +18,7 @@ export default function BioCard({ member }) {
 
                 {/* Role badge */}
                 <div className="absolute bottom-4 left-4">
-          <span className="px-3 py-1 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold uppercase tracking-wide rounded text-primary">
+          <span className="px-3 py-1 bg-white/90 backdrop-blur text-xs font-bold uppercase tracking-wide rounded text-primary">
             {member.role}
           </span>
                 </div>
@@ -32,10 +32,10 @@ export default function BioCard({ member }) {
             </div>
 
             {/* Info */}
-            <h3 className="text-lg font-display font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors duration-200">
+            <h3 className="text-lg font-display font-bold text-gray-900 group-hover:text-primary transition-colors duration-200">
                 {member.name}
             </h3>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
+            <p className="text-sm text-gray-500 mt-0.5">
                 {member.credentials}
             </p>
             <p className="text-xs text-primary font-medium mt-1 flex items-center gap-1">

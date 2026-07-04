@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 export default function DivisionCard({ division, reverse }) {
     return (
         <div
             className={`group relative flex flex-col ${
                 reverse ? "md:flex-row-reverse" : "md:flex-row"
-            } rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-surface-light dark:bg-surface-dark shadow-sm hover:shadow-xl transition-shadow duration-500 min-h-[420px]`}
+            } rounded-2xl overflow-hidden border border-gray-200 bg-surface-light shadow-sm hover:shadow-xl transition-shadow duration-500 min-h-[420px]`}
         >
             {/* Image Side */}
             <div className="relative w-full md:w-1/2 min-h-[280px] md:min-h-full overflow-hidden">
@@ -28,13 +30,13 @@ export default function DivisionCard({ division, reverse }) {
                     <span className="material-symbols-outlined text-3xl">{division.icon}</span>
                 </div>
 
-                <h2 className="font-display text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2">
+                <h2 className="font-display text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
                     {division.name}
                 </h2>
                 <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4">
                     {division.tagline}
                 </p>
-                <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
+                <p className="text-gray-600 leading-relaxed mb-8">
                     {division.description}
                 </p>
 
@@ -43,7 +45,7 @@ export default function DivisionCard({ division, reverse }) {
                     {division.highlights.map((item) => (
                         <li
                             key={item}
-                            className="flex items-center gap-3 text-sm text-gray-700 dark:text-gray-300"
+                            className="flex items-center gap-3 text-sm text-gray-700"
                         >
                             <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                             {item}
@@ -62,12 +64,12 @@ export default function DivisionCard({ division, reverse }) {
                         {division.cta}
                         <span className="material-symbols-outlined text-sm">arrow_outward</span>
                     </a>
-                    <a
-                        href="/contact"
+                    <Link
+                        to="/contact"
                         className="text-sm text-primary font-semibold hover:underline underline-offset-4 decoration-primary"
                     >
                         Enquire →
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

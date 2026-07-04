@@ -20,7 +20,7 @@ const Hero = () => {
                 {/* Card 1 — Research */}
                 <div className="group relative rounded-[2rem] overflow-hidden shadow-xl aspect-square md:aspect-auto">
                     <img
-                        src="https://images.unsplash.com/photo-1576091160550-2173ff9e81b5?auto=format&fit=crop&q=80&w=800"
+                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
                         alt="Nexus Research"
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
@@ -57,20 +57,20 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* Card 3 — Market */}
+                {/* Card 3 — Market (Books) */}
                 <div className="group relative rounded-[2rem] overflow-hidden shadow-xl aspect-square md:aspect-auto">
                     <img
-                        src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=800"
+                        src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&q=80&w=800"
                         alt="Nexus Market"
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 p-8 text-white w-full">
                         <div className="w-10 h-10 rounded-full bg-[#721073] flex items-center justify-center mb-4 shadow-lg shadow-[#721073]/50">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
                         </div>
                         <h3 className="text-2xl font-heading font-semibold mb-2">Nexus Market</h3>
-                        <p className="text-gray-200 text-sm mb-4 leading-relaxed max-w-[90%]">Explore premium goods and services. A curated ecosystem where style thrives.</p>
+                        <p className="text-gray-200 text-sm mb-4 leading-relaxed max-w-[90%]">Curated books and premium reads for the modern, forward-thinking mind.</p>
                         <Link to="/services" className="flex items-center gap-2 text-sm font-semibold hover:text-white transition-colors">
                             View Platform <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                         </Link>

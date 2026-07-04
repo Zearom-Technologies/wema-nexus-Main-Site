@@ -45,12 +45,7 @@ const Excellence = () => {
                             Quality safety checks and health measures for strategic excellence.
                         </p>
 
-                        {/* Decorative Cursor arrow - highly detailed to match reference */}
-                        <div className="absolute top-2 -right-8 w-24 h-24 pointer-events-none drop-shadow-xl z-20">
-                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full transform -rotate-12 translate-y-4">
-                                <path d="M15 42L15 6L40 25.5L25.5 27L28.5 40L20 42L18.5 28L15 42Z" fill="#a7f3d0" stroke="#111827" strokeWidth="2.5" strokeLinejoin="round" />
-                            </svg>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
