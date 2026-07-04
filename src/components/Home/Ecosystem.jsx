@@ -9,7 +9,7 @@ const Ecosystem = () => {
                 <div className="flex justify-between items-end mb-10">
                     <div>
                         <h2 className="text-4xl font-heading font-bold text-gray-900 mb-3">Our Ecosystem</h2>
-                        <p className="text-gray-500 text-lg">Pioneering VC & macro-driven across our investment arms.</p>
+                        <p className="text-gray-500 text-lg">Three divisions, one connected vision — research, care, and curated commerce.</p>
                     </div>
                     <Link to="/services" className="hidden sm:flex items-center gap-2 text-[#721073] font-semibold hover:text-[#4a0b4b] transition-colors">
                         View All Divisions
@@ -20,10 +20,10 @@ const Ecosystem = () => {
                 {/* Bento Grid layout */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-auto lg:h-[500px]">
 
-                    {/* Main Large Card (Left) */}
+                    {/* Main Large Card (Left) — Care */}
                     <div className="group relative rounded-[2rem] overflow-hidden shadow-lg h-full min-h-[450px]">
                         <img
-                            src="https://images.unsplash.com/photo-1573497491765-dccce02cb70c?auto=format&fit=crop&q=80&w=1000"
+                            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000"
                             alt="Corporate Wellness Programs"
                             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
@@ -45,7 +45,7 @@ const Ecosystem = () => {
                     {/* Right side Grid */}
                     <div className="flex flex-col gap-6 h-full">
 
-                        {/* Top wide card */}
+                        {/* Top wide card — Research */}
                         <div className="bg-white rounded-[2rem] p-8 flex-1 shadow-md border border-gray-100 relative overflow-hidden group flex flex-col">
                             <div className="absolute right-6 top-6 w-32 h-24 text-[#e239e5]/20 flex items-start justify-end pointer-events-none group-hover:scale-105 transition-transform duration-500">
                                 <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
@@ -55,9 +55,9 @@ const Ecosystem = () => {
                                 </svg>
                             </div>
                             <div>
-                                <span className="inline-block px-4 py-1.5 bg-[#fdf0fe] text-[#721073] rounded-full text-xs font-bold tracking-widest mb-4 shadow-sm">ANALYTICS</span>
+                                <span className="inline-block px-4 py-1.5 bg-[#fdf0fe] text-[#721073] rounded-full text-xs font-bold tracking-widest mb-4 shadow-sm">RESEARCH</span>
                                 <h3 className="text-2xl font-heading font-bold text-gray-900 mb-2">Q3 / Global Market Trends</h3>
-                                <p className="text-gray-500 text-sm mb-6 max-w-sm leading-relaxed">From digital concepts globally, here's strategic direction to shape what's next.</p>
+                                <p className="text-gray-500 text-sm mb-6 max-w-sm leading-relaxed">Market and consumer research, distilled into strategic direction to shape what's next.</p>
                             </div>
                             <Link to="/services" className="flex items-center gap-2 text-sm font-bold text-[#721073] hover:text-[#4a0b4b] transition-colors mt-auto w-fit border-b-2 border-[#721073] pb-0.5">
                                 Download Report
@@ -68,15 +68,14 @@ const Ecosystem = () => {
                         {/* Bottom 2 sub-cards */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-[1.2]">
 
-                            {/* Dark Card — links to services */}
+                            {/* Dark Card — Market (Books) */}
                             <Link to="/services" className="bg-[#111] rounded-[2rem] p-6 text-white shadow-xl flex flex-col relative overflow-hidden group">
                                 <div className="absolute inset-0 flex items-center justify-center opacity-80 group-hover:scale-110 transition-transform duration-500">
-                                    <img src="https://images.unsplash.com/photo-1555529771-835f59bfc50c?auto=format&fit=crop&q=80&w=400" alt="Cart bg" className="w-full h-full object-cover opacity-20 mix-blend-luminosity" />
-                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#ef4444" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="absolute z-10 opacity-70"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&q=80&w=400" alt="Books background" className="w-full h-full object-cover opacity-30 mix-blend-luminosity" />
                                 </div>
                                 <div className="mt-auto relative z-10 pb-2">
-                                    <h3 className="text-xl font-heading font-bold mb-1 leading-tight">Digital Value Checks</h3>
-                                    <p className="text-gray-400 text-xs">eCommerce Flow</p>
+                                    <h3 className="text-xl font-heading font-bold mb-1 leading-tight">Curated Reads</h3>
+                                    <p className="text-gray-400 text-xs">Nexus Market</p>
                                 </div>
                             </Link>
 
@@ -89,7 +88,7 @@ const Ecosystem = () => {
                                 </div>
                                 <div className="self-end mt-4 relative z-10">
                                     <div className="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center backdrop-blur-sm group-hover:bg-white/20 cursor-pointer transition-colors bg-white/10">
-                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M5 12l7 7 7-7" /></svg>
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M5 12l7 7-7 7" /></svg>
                                     </div>
                                 </div>
                             </Link>

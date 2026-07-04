@@ -76,7 +76,7 @@ export default function Services() {
           <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-xs font-semibold uppercase tracking-widest rounded-full mb-6">
             Our Divisions
           </span>
-                    <h1 className="font-display text-5xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
+                    <h1 className="font-display text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
                         Three Pillars. <br />
                         <span className="text-primary italic">One Ecosystem.</span>
                     </h1>
@@ -96,25 +96,25 @@ export default function Services() {
                 </div>
             </section>
 
-            {/* Bottom CTA Strip */}
-            <section className="py-20 bg-gray-900">
-                <div className="max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
-                        Not sure which division fits your needs?
-                    </h2>
-                    <p className="text-gray-400 mb-8">
-                        Our team will help you find the right fit — whether it's data,
-                        care, or commerce.
-                    </p>
-                    <a
-                        href="/contact"
-                        className="inline-flex items-center gap-2 bg-primary hover:bg-secondary text-white px-8 py-3.5 rounded-full font-semibold transition-colors duration-300"
-                    >
-                        Talk to Us
-                        <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                    </a>
-                </div>
-            </section>
-        </main>
+{/* Bottom CTA Strip */}
+<section className="py-20 bg-surface-dark">
+    <div className="max-w-4xl mx-auto px-4 text-center">
+        <h2 className="font-display text-3xl md:text-4xl !text-white font-bold text-gray-900 mb-4">
+            Not sure which division fits your needs?
+        </h2>
+        <p className="text-gray-300 mb-8">
+            Our team will help you find the right fit — whether it's data,
+            care, or commerce.
+        </p>
+        <a
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-primary hover:bg-secondary text-white px-8 py-3.5 rounded-full font-semibold transition-colors duration-300"
+        >
+            Talk to Us
+            <span className="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+    </div>
+</section>
+</main>
     );
 }

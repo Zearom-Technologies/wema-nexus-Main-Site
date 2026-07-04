@@ -1,102 +1,48 @@
 @import "tailwindcss";
 
-
-
 @theme {
+  --color-background-light: #f8f5f2;
+  --color-background-dark: #1a161b;
 
-    --color-background-light: #f8f5f2;
+  --color-surface-light: #ffffff;
+  --color-surface-dark: #2a242b;
 
-    --color-background-dark: #1a161b;
+  --color-text-light: #1f2937;
+  --color-text-dark: #e5e7eb;
 
-    --color-surface-light:#ffffff;
+  --color-accent-light: #e0dce0;
+  --color-accent-dark: #3d323e;
 
-    --color-surface-dark: #2a242b;
-
-    --color-text-light: #1f2937;
-
-    --color-text-dark: #e5e7eb;
-
-    --color-accent-light: #e0dce0;
-
-    --color-accent-dark: #3d323e;
-
-    --primary-color: #721073;
-
-    --secondary-color: #4a0b4b;
-
-
-  }
-
-
+  /* renamed so Tailwind generates bg-primary / text-primary / etc. */
+  --color-primary: #721073;
+  --color-secondary: #4a0b4b;
+}
 
 :root {
+  --primary-color: #721073;
+  --secondary-color: #4a0b4b;
+  --text-primary: #000;
+  --text-secondary: #4b5563;
 
-    --primary-color: #721073;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
 
-    --secondary-color: #4a0b4b;
+h1 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+}
 
-    --text-primary: #000;
+h2 {
+  font-family: var(--font-heading);
+  color: var(--secondary-color);
+}
 
-    --text-secondary: #4B5563;
+p {
+  font-family: var(--font-body);
+}
 
-    --font-heading: "Poppins", sans-serif;
-
-    --font-body: "Inter", sans-serif;
-
-  }
-
-  
-
-  h1 {
-
-    /* font-size: 2.5rem; */
-
-    font-family: var(--font-heading);
-
-    color: var(--primary-color);
-
-  }
-
-  
-
-  h2 {
-
-    /* font-size: 2rem; */
-
-    font-family: var(--font-heading);
-
-    color: var(--secondary-color);
-
-  }
-
-  
-
-  p {
-
-    font-family: var(--font-body);
-
-  }
-
-  span {
-
-    /* font-size: 2.5rem; */
-
-    font-family: var(--font-heading);
-
-    color: var(--secondary-color);
-
-  }
-
-  /* li:hover{
-
-    background:white;
-
-    border-radius: 15px;
-
-    padding-inline: 10px;
-
-    color: black;
-
-  } */
-
-  
+span {
+  font-family: var(--font-heading);
+  color: var(--secondary-color);
+}
