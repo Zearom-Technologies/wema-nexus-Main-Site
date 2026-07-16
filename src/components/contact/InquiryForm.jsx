@@ -82,10 +82,11 @@ export default function InquiryForm() {
 
             {/* Name */}
             <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="inquiry-name" className="block text-sm font-medium text-gray-700 mb-2">
                     Full Name <span className="text-primary">*</span>
                 </label>
                 <input
+                    id="inquiry-name"
                     type="text"
                     name="name"
                     required
@@ -99,10 +100,11 @@ export default function InquiryForm() {
             {/* Email + Phone side by side */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="inquiry-email" className="block text-sm font-medium text-gray-700 mb-2">
                         Email Address <span className="text-primary">*</span>
                     </label>
                     <input
+                        id="inquiry-email"
                         type="email"
                         name="email"
                         required
@@ -113,10 +115,11 @@ export default function InquiryForm() {
                     />
                 </div>
                 <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="inquiry-phone" className="block text-sm font-medium text-gray-700 mb-2">
                         Phone Number
                     </label>
                     <input
+                        id="inquiry-phone"
                         type="tel"
                         name="phone"
                         value={formData.phone}
@@ -129,10 +132,11 @@ export default function InquiryForm() {
 
             {/* Division / Site */}
             <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="inquiry-site" className="block text-sm font-medium text-gray-700 mb-2">
                     Which division are you inquiring about? <span className="text-primary">*</span>
                 </label>
                 <select
+                    id="inquiry-site"
                     name="site"
                     required
                     value={formData.site}
@@ -149,26 +153,28 @@ export default function InquiryForm() {
 
             {/* Subject */}
             <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="inquiry-subject" className="block text-sm font-medium text-gray-700 mb-2">
                     Subject <span className="text-primary">*</span>
                 </label>
                 <input
+                    id="inquiry-subject"
                     type="text"
                     name="subject"
                     required
                     value={formData.subject}
                     onChange={handleChange}
-                    placeholder="What is your enquiry about?"
+                    placeholder="What is your inquiry about?"
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary transition"
                 />
             </div>
 
             {/* Message */}
             <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="inquiry-message" className="block text-sm font-medium text-gray-700 mb-2">
                     Message <span className="text-primary">*</span>
                 </label>
                 <textarea
+                    id="inquiry-message"
                     name="message"
                     required
                     rows={5}
